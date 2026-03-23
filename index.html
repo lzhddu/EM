@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="EM（相册加密）隐私政策" />
+  <title>隐私政策 - EM（相册加密）</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --border: #e0e0e0;
+      --bg: #fafafa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f0f0f0;
+        --muted: #aaa;
+        --border: #333;
+        --bg: #121212;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+      color: var(--fg);
+      background: var(--bg);
+      margin: 0;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      line-height: 1.35;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .notice {
+      background: rgba(0, 122, 255, 0.08);
+      border-left: 4px solid #007aff;
+      padding: 0.75rem 1rem;
+      margin: 1.25rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1.75rem 0 0.65rem;
+    }
+    p, li {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+    ol {
+      padding-left: 1.25rem;
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #007aff;
+      word-break: break-all;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>隐私政策</h1>
+    <p class="meta">更新日期：2026-03-11<br />生效日期：2026-03-11</p>
+
+    <p class="notice"><strong>重要声明：</strong>本应用不会将您的照片上传到任何服务器。照片的选择、展示与加密/解密处理均在您的设备本地完成。</p>
+
+    <p>欢迎使用 <strong>EM</strong>（相册加密）（以下简称「本应用」）。本应用致力于在不上传照片到服务器的前提下，为您提供本地相册加密与管理能力。本政策将说明我们如何处理信息、如何使用系统权限、以及您享有的权利。</p>
+
+    <h2>一、我们处理的信息范围</h2>
+    <ol>
+      <li><strong>照片内容：</strong>本应用仅在您主动选择或导入的情况下，读取您选择的照片/资源用于展示与加密处理。本应用不会主动读取或上传您未选择的照片内容。</li>
+      <li><strong>设备内本地数据：</strong>本应用会在设备本地保存您创建的加密相册结构、相册名称、相册内照片标识及与功能相关的设置。</li>
+      <li><strong>我们不收集的信息：</strong>本应用不要求您注册账号，不收集手机号、通讯录、定位信息等；除非系统或平台另有要求，本应用不将您的照片上传到我们的服务器。</li>
+    </ol>
+
+    <h2>二、系统权限的使用说明</h2>
+    <p>为实现核心功能，本应用可能请求以下权限：</p>
+    <ol>
+      <li><strong>相册读取权限（Photos 读取）：</strong>用于让您从系统相册中选择照片并在应用内展示、加密、管理。</li>
+      <li><strong>相册写入权限（Photos 添加/写入）：</strong>仅在您使用「保存相册」等导出功能时，将照片导出到系统相册。</li>
+    </ol>
+    <p>说明：若您拒绝授权，相应功能可能无法使用，但不影响您浏览应用的部分界面。您也可以在系统「设置」中随时关闭或重新开启权限。</p>
+
+    <h2>三、照片与加密数据如何存储</h2>
+    <ol>
+      <li><strong>加密文件：</strong>加密后的照片数据会保存在应用沙盒的本地存储中。</li>
+      <li><strong>解密结果：</strong>除非您主动使用「保存相册」导出功能，解密结果仅保存在应用本地，不会自动写入系统相册。</li>
+      <li><strong>加密密钥：</strong>本应用会使用设备 Keychain（钥匙串）保存用于加密/解密的密钥材料。</li>
+      <li><strong>卸载提示：</strong>如果您删除/卸载本应用，本应用在设备本地保存的加密文件、解密结果以及相册数据可能会被清除，从而导致相关内容丢失且无法恢复。建议您在卸载前先导出并备份所需照片。</li>
+    </ol>
+
+    <h2>四、信息共享、转让与公开披露</h2>
+    <p>我们不会向第三方出售您的个人信息。除以下情形外，我们不会共享、转让或公开披露您的照片内容或本地加密数据：</p>
+    <ol>
+      <li>取得您的明确同意；</li>
+      <li>法律法规规定或有权机关要求；</li>
+      <li>为保护您或公众的人身财产安全且在紧急情况下无法及时取得同意。</li>
+    </ol>
+
+    <h2>五、第三方 SDK 与链接</h2>
+    <p>本应用可能使用系统提供的能力（如 Photos、Keychain、分享面板、App Store 评分跳转）。若未来接入第三方 SDK，我们将更新本政策并说明其用途。</p>
+
+    <h2>六、信息安全</h2>
+    <p>我们采用合理的安全措施保护本地数据，包括本地加密存储、最小化权限申请、钥匙串存储密钥等。</p>
+
+    <h2>七、您的权利</h2>
+    <p>您可在本应用内管理加密相册与照片（添加/删除/导出），并可在系统设置中管理权限。您也可以通过卸载应用删除本应用产生的本地数据。</p>
+
+    <h2>八、未成年人保护</h2>
+    <p>若您未满 14 周岁，请在监护人同意与指导下使用本应用。</p>
+
+    <h2>九、本政策的更新</h2>
+    <p>我们可能适时更新本政策。更新后我们将以适当方式提示您，更新内容自发布之日起生效。</p>
+
+    <h2>十、联系我们</h2>
+    <p>如您对本政策有任何疑问或建议，可通过应用内「联系我们」功能，或发送邮件至：<a href="mailto:chengduyingxin@163.com">chengduyingxin@163.com</a>。</p>
+
+    <footer>
+      <p>本页面内容与 App 内隐私政策一致，适用于 <strong>EM（相册加密）</strong> iOS 应用。上架前请核对应用显示名称、Bundle ID 与联系方式是否与 App Store Connect 一致。</p>
+    </footer>
+  </main>
+</body>
+</html>
